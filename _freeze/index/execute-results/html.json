@@ -1,0 +1,15 @@
+{
+  "hash": "68a4eba33255fae3b0b48a35396cf6e8",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \" \"\ndate: last-modified\nexecute:   \n  freeze: auto  # re-render only when source changes\nformat:\n  html:\n    toc: true\n    toc-depth: 3\n    number-sections: false\n    highlight-style: pygments\n---\n\n\n\n# EFSPI statistical methodology leaders\n\nIn September 2023 EFSPI founded a new group _EFSPI statistical methodology leaders_, bringing together methodology leaders to work on topics of common interest.\n\nFind more context in this [linkedin post](https://www.linkedin.com/posts/kasparrufibach_biostatistics-statistics-drugdevelopment-activity-7084613881087578113-teIX/?utm_source=share&utm_medium=member_desktop) and [this slidedeck](material/20230913_EFSPI_methodology_group_linkedin.pdf).\n\n# Feedback \n\nFor feedback and questions send an email to [efspieurope@gmail.com](efspieurope@gmail.com).\n\n# EFSPI\n\n[EFSPI](http://www.efspi.org).\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

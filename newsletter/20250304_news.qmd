@@ -1,0 +1,46 @@
+---
+title: "Contribution to EFSPI newsletter March 2025"
+date: last-modified
+execute:   
+  freeze: auto  # re-render only when source changes
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: false
+    highlight-style: pygments
+---
+
+# Yearly face-to-face meeting
+
+In January, the EFSPI statistical methodology leaders met for their yearly face-to-face meeting at Merck in Darmstadt. Twelve members took two days out of their busy schedule to travel to Germany. Below we summarize the discussions.
+
+# Achievements
+
+While this group is only in effect for a bit more than one year achievements are manifold: 
+
+- presentations and industry at two EMA multistakeholder workshops on behalf EFPIA, 
+- building a network of methodology leaders within Europe, 
+- fostering thinking about invention, innovation, adoption and impact through roundtables, webinars, podcasts, etc.
+
+# Determination of priority topics
+
+Four priority topics were identified for which dedicated subteams are having internal discussions and work on list of questions. See [here](methods_intro.html#priority-topics).
+
+
+# Training offers
+
+Building on the first webinar [From Statistical Innovations to Common Practice: How to innovate with impact?](https://baselbiometrics.github.io/home/docs/events_past.html#bbs-webinar-on-from-statistical-innovations-to-common-practice-how-to-innovate-with-impact) the group plans to continue a webinar series sharing examples of successful commercializations of statistical inventions. 
+
+# Career development for methodologists
+
+Different models were discussed and we plan to have a discussion with the EFSPI statistical leaders how we can best collaborate to continue to build a network of methodologists.
+
+# Interaction with statistical engineering colleagues
+
+The group will seek alignment with openstatsware on implementation of software for the four priority topics and will explore further opportunities for collaboration between the two groups.
+
+# Library of commercialisations
+
+A library of successful commercialization examples of statistical inventions has been initiated. These examples will be worked up so that they can be shared with the community to help discussions on methods within companies, e.g. to get partner functions on board for certain statistical methods, not the least in a regulatory context.
+

@@ -1,0 +1,44 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    - index.qmd    
+    - events.qmd
+    - methods_intro.qmd
+    - methods_members.qmd
+    - priority.qmd
+    - publications.qmd
+    - newsletter
+    - newsletter/
+
+website:
+  title: "EFSPI Statistical Methodology Leaders"
+  navbar:
+    background: info
+    left:
+    - text: "Members"  
+      href: methods_members.html
+    - text: "Events"  
+      href: events.html
+    - text: "Priority topics"  
+      href: priority.html
+    - text: "Publications"  
+      href: publications.html
+    - text: "Newsletters"  
+      menu:
+        - text: "3rd March 2025"  
+          href: newsletter/20250304_news.html
+        - text: "14th February 2026"  
+          href: newsletter/20260214_achievements2025.html
+        - text: "12th June 2026"  
+          href: newsletter/20260612_news.html
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+editor: source
+
+

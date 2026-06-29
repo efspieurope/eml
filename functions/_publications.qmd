@@ -1,0 +1,90 @@
+```{r echo = FALSE}
+# how to do this with child documents: https://gist.github.com/rmoff/a043676a2f084b81a434
+
+j <- as.numeric('{{j}}')
+tab <- filter(pubs, Type == ut[j])
+```
+
+# `r paste(ut[j], sep = "")` {-} 
+
+```{r echo = FALSE}
+tab1 <- rep("", nrow(tab))
+
+tab1 <- paste(tab$First, " (**", tab$Year, "**). ", tab$Title, ".", sep = "")
+
+if (ut[j] != "Talks"){
+  
+# add status or journal
+i1 <- (tab$Status == "s")
+tab1 <- paste(tab1, " _", tab$Journal, "_", sep = "")
+
+# accepted papers
+i0 <- (tab$Status == "ta")
+tab1[i0] <- paste(tab1, ", to appear.", sep = "")[i0]
+
+# papers with reference and volume
+i2 <- ((tab$Status %in% c("s", "ta")) == FALSE & is.na(tab$Issue) == FALSE)
+tab1[i2] <- paste(tab1, ", **", tab$Volume, "**(", tab$Issue, "), ", tab$Pages, ". ", sep = "")[i2]
+
+# papers with reference and no issue
+i2b <- ((tab$Status %in% c("s", "ta")) == FALSE & is.na(tab$Issue) == TRUE)
+tab1[i2b] <- paste(tab1, ", **", tab$Volume, "**:", tab$Pages, ". ", sep = "")[i2b]
+
+# add full stop to submitted papers
+tab1[i1] <- paste(tab1, ".", sep = "")[i1]
+
+# doi
+i3 <- (is.na(tab$doi) == FALSE)
+tab1[i3] <- paste(tab1, " [doi](", tab$doi, ") | ", sep = "")[i3]
+
+# preprint
+i4 <- (is.na(tab$preprint) == FALSE)
+tab1[i4] <- paste(tab1, " [preprint](", tab$preprint, ") | ", sep = "")[i4]
+
+# markdown
+i5 <- (is.na(tab$markdown) == FALSE)
+tab1[i5] <- paste(tab1, " [markdown](", tab$markdown, ") | ", sep = "")[i5]
+
+# github
+i6 <- (is.na(tab$github) == FALSE)
+tab1[i6] <- paste(tab1, " [github](", tab$github, ") | ", sep = "")[i6]
+
+# cran
+i7 <- (is.na(tab$cran) == FALSE)
+tab1[i7] <- paste(tab1, " [R package on cran](", tab$cran, ") | ", sep = "")[i7]
+
+# shiny
+i8 <- (is.na(tab$shiny) == FALSE)
+tab1[i8] <- paste(tab1, " [shiny](", tab$shiny, ") | ", sep = "")[i8]
+
+# linkedin
+i9 <- (is.na(tab$linkedin) == FALSE)
+tab1[i9] <- paste(tab1, " [linkedin](", tab$linkedin, ") | ", sep = "")[i9]
+
+# podcast
+i10 <- (is.na(tab$podcast) == FALSE)
+tab1[i10] <- paste(tab1, " [podcast](", tab$podcast, ") | ", sep = "")[i10]
+
+# video
+i11 <- (is.na(tab$video) == FALSE)
+tab1[i11] <- paste(tab1, " [video](", tab$video, ") | ", sep = "")[i11]
+
+# comment
+i12 <- (is.na(tab$comment) == FALSE)
+tab1[i12] <- paste(tab1, ". ", tab$comment, sep = "")[i12]
+}
+
+if (ut[j] == "Talks"){
+  
+i4 <- (is.na(tab$preprint) == FALSE)
+tab1[i4] <- paste(tab1, " | [slidedeck](", tab$preprint, ") | ", sep = "")[i4]
+
+}
+
+
+
+tab2 <- data.frame(cbind(tab1))
+
+kable(tab2, col.names = c(""))
+```
+

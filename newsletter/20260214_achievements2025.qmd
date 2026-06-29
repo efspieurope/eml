@@ -1,0 +1,26 @@
+---
+title: "EFSPI methodology leaders: achievements 2025"
+date: last-modified
+execute:   
+  freeze: auto  # re-render only when source changes
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: false
+    highlight-style: pygments
+---
+
+- Three presentations at [EFSPI regulatory statistics workshop](https://efspieurope.github.io/workshop/): 
+  - EFSPI method leaders (Mouna) presented the four priority topics.
+  - Tobias presented on credibility framework/assumptions.
+  - Nicky presented in the Bayes session.
+  - See [here](https://efspieurope.github.io/workshop/data/2025/slides.html) for recordings and slidedecks.
+- EFSPI statistics leaders meeting: Kaspar and Mouna presented on the four priority topics.
+- Organization of BBS / EFSPI webinar [From Statistical Innovations to Common Practice, How to innovate with impact?](https://baselbiometrics.github.io/home/docs/events_past.html#bbs-webinar-on-from-statistical-innovations-to-common-practice-how-to-innovate-with-impact).
+- Collation of comments on draft ICH E20 and submission via EFSPI.
+- Contribution to EMA's External Control workshop, see [events](../methods/events.html).
+- Contribution to EMA's Bayes Workshop, see [events](../methods/events.html).
+Increased collaboration + synergies with EFPIA Clinical Trial Innovation Pillar, EFSPI Regulatory eSIG, contribution to yearly informal discussion with MHRA, jointly with Regulatory eSIG.
+- Community benefit: taking ideas back to our own companies/networks.
+- Companies align their priorities to the ones declared by this group.

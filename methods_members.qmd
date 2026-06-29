@@ -1,0 +1,26 @@
+---
+title: "EFSPI methods leaders: members"
+date: last-modified
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: false
+    highlight-style: pygments
+---
+
+```{r setup, include = FALSE, echo = FALSE}
+## load packages
+packs.html <- c("knitr", "pander", "reporttools", "dplyr", "readxl")
+for (i in 1:length(packs.html)){library(packs.html[i], character.only = TRUE)}
+
+knitr::opts_chunk$set(echo = TRUE)
+ 
+## read in data
+path <- getwd()
+members <- as.data.frame(read.csv(paste("data/methods_members.csv", sep = "")))[, -1]
+```
+
+```{r echo = FALSE}
+kable(members, col.names = c("Name", "Role", "Company", "Location", "Country"))
+```

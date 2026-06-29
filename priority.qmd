@@ -1,0 +1,44 @@
+---
+title: "Priority topics"
+date: last-modified
+execute:   
+  freeze: auto  # re-render only when source changes
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: false
+    highlight-style: pygments
+tbl-colwidths: [40, 15, 20, 15]
+---
+
+Currently, the EFSPI methods leaders are working on five priority topics. These topics are aligned with both [EFSPI](https://www.efspi.org/) and [EFPIA](https://www.efpia.eu/) and input from further stakeholders, e.g. the [EFSPI / PSI eSIGs](https://www.psiweb.org/sigs-special-interest-groups/sigs), is sought as well. The idea is to contribute to scientific discussions through publications and presentations and to be prepared for discussions with regulators once there are opportunities, e.g. within EMA multistakeholder workshops.
+
+
+```{r setup, include = FALSE, echo = FALSE}
+## load packages
+packs.html <- c("knitr", "pander", "reporttools", "dplyr", "readxl")
+for (i in 1:length(packs.html)){library(packs.html[i], character.only = TRUE)}
+
+knitr::opts_chunk$set(echo = TRUE)
+
+## read in data
+path <- getwd()
+prio <- as.data.frame(read_excel(paste(path, "/material/prio.xlsx", sep = ""), col_types = NULL))
+```
+
+
+
+```{r, include=TRUE, echo=FALSE}
+#| tbl-align: center
+
+prio[is.na(prio)] <- ""
+prio["Download charter"] <- paste("[X](", prio[, "Download charter"], ")", sep = "")
+prio <- prio %>% select("Priority topic", "Status", "Lead(s)", "Download charter")
+kable(prio, align = "llll", row.names = FALSE)
+```
+
+
+
+
+

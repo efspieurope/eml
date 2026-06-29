@@ -1,0 +1,15 @@
+{
+  "hash": "30925fbb69ac73327b190b3fe2e9488b",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Priority topics\"\ndate: last-modified\nexecute:   \n  freeze: auto  # re-render only when source changes\nformat:\n  html:\n    toc: true\n    toc-depth: 3\n    number-sections: false\n    highlight-style: pygments\ntbl-colwidths: [40, 15, 20, 15]\n---\n\nCurrently, the EFSPI methods leaders are working on five priority topics. These topics are aligned with both [EFSPI](https://www.efspi.org/) and [EFPIA](https://www.efpia.eu/) and input from further stakeholders, e.g. the [EFSPI / PSI eSIGs](https://www.psiweb.org/sigs-special-interest-groups/sigs), is sought as well. The idea is to contribute to scientific discussions through publications and presentations and to be prepared for discussions with regulators once there are opportunities, e.g. within EMA multistakeholder workshops.\n\n\n\n\n\n\n\n::: {.cell tbl-align='center'}\n::: {.cell-output-display}\n\n\n|Priority topic                                                  |Status          |Lead(s)                |Download charter |\n|:---------------------------------------------------------------|:---------------|:----------------------|:----------------|\n|Application of Bayesian methods in drug development             |Active          |Mike Krams, Nicky Best |[X](material/Charter_Bayes.pdf)|\n|Covariate adjustment                                            |Active          |Alex Ocampo            |[X](material/Charter_CovariateAdj.pdf)|\n|A framework to appraise statistical methods building on ICH M15 |Completed       |Tobias Mielke          |[X](material/Charter_Credibility.pdf)|\n|Specific topics related to estimands                            |To be confirmed |David Wright           |[X](material/Charter_Estimands.pdf)|\n|AI                                                              |Active          |Marc Vandemeulebroecke |[X](material/Charter_AI.pdf)|\n\n\n:::\n:::\n\n\n\n\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
