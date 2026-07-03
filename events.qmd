@@ -1,76 +1,63 @@
 ---
-title: ""
+title: "Past events with contributions from the working group"
+date: last-modified
 output: 
   rmarkdown::html_document:
     highlight: pygments
-    number_sections: no
+    number_sections: yes
     self_contained: yes
-    toc: no
-    toc_depth: 2
+    toc: yes
+    toc_depth: 3
     toc_float: yes
 ---
 
-# 2026/05/12: Meeting EFSPI methods leaders - EMA statisticians
+```{r setup, include = FALSE, echo = FALSE}
+## load packages
+packs.html <- c("knitr", "pander", "reporttools", "dplyr", "readxl")
+for (i in 1:length(packs.html)){library(packs.html[i], character.only = TRUE)}
 
-- [Minutes](events/20260519/20260519_EML_EMA_stats.pdf).
+knitr::opts_chunk$set(echo = TRUE)
 
-# 2026/05/12: EFSPI StatsLeaders Meeting Munich
+## talks
+path <- getwd()
+talks <- as.data.frame(read_excel(paste(path, "/data/seminars.xlsx", sep = ""), col_types = NULL))
 
-- Mouna and Tobias lead a session on _Engagement with Regulatory Agencies and Methodological Innovation_.
+# prepare date strings
+d <- substr(talks$date, 1, 2)
+m <- substr(talks$date, 4, 5)
+y <- substr(talks$date, 7, 11)
 
-# 2026/04/15: EFSPI Statistical Methodology Leaders F2F in Copenhagen
+rdate <- paste(y, m, d, sep = "")
+talks$rdate <- rdate
 
-Topics that were discussed:
+# select talks with past date
+talks <- (talks %>% filter(rdate <= gsub("-", "", as.character(Sys.Date()))))
 
-- Update from organizations.
-- Change management tactics.
-- Priority topics, see [here](priority.html).
+talks <- (talks %>% group_by(rdate, talknr)  %>% 
+        arrange(
+            desc(rdate), 
+            talknr
+        ))
+talks <- as.data.frame(talks)
+rdate <- unique(talks$rdate)
+dates <- unique(select(talks, date))[, 1]
+```
 
-# 2025/11/03: EMA workshop on external controls
+Below a list of past events with contributions of the WG, with links to slidedecks and recordings (where available).
 
-- Mouna and Marc represented the group in the scientific committee while Natalia presented.
-- [Recording and slidedecks](https://www.ema.europa.eu/en/events/workshop-use-external-controls-evidence-generation-regulatory-decision-making).
+```{r echo = FALSE, message = FALSE, warning = FALSE, include = FALSE}
 
-# 2025/09/10: EFSPI regulatory statistics workshop
+# how to do this with child documents: https://gist.github.com/rmoff/a043676a2f084b81a434
 
-- EFSPI method leaders (Mouna) presented the four priority topics.
-- Tobias presented on credibility framework/assumptions.
-- Nicky presented in the Bayes session.
-- See [here](https://efspieurope.github.io/workshop/data/2025/slides.html) for recordings and slidedecks.
+out1 <- NULL
+for (i in 1:length(dates)){
+  out1 <- c(out1, knit_expand('tools/seminars1.Rmd'))
+}
 
-# 2025/05/13: EFSPI StatsLeaders Meeting in Copenhagen
+# the "knit" command somehow produces unwanted output, this is why I assign its output to a and use a separate chunk to display a
+a <- knit(text = unlist(paste(out1, collapse = '\n')), quiet = TRUE)
+```
 
-- Mouna and Kaspar ran a session "Innovative clinical trial methodologies and their adoption - Priorities and Opportunities".
-
-# 2025/03/19: BBS webinar "From Statistical Innovations to Common Practice, How to innovate with impact?"
-
-[Slides and recording](https://baselbiometrics.github.io/home/docs/events_past.html#bbs-webinar-on-from-statistical-innovations-to-common-practice-how-to-innovate-with-impact)
-
-# 2024/11/13: Regular meeting of [EFSPI / PSI regulatory eSIG](https://www.psiweb.org/sigs-special-interest-groups/regulatory) with MHRA statisticians 
-
-EFSPI methods leaders also provided input into the agenda of this meeting, and some also attended. Below the protocol of the discussion.
-
-- [Summary of discussions](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fwww.psiweb.org%2Fdocs%2Fdefault-source%2Fsig---regulatory%2F2024-minutes-of-meeting-with-mhra-biostatisticians-(final).docx%3Fsfvrsn%3Da6bfafdb_0&wdOrigin=BROWSELINK).
-
-# 2024/07/06: EMA multistakeholder workshop on general topics 
-
-EMA invited industry to propose topics for discussion, of which ten were selected for discussion, see the agenda below. Most short talks were given by members of the [EFSPI statistical methodology leaders group](https://efspieurope.github.io/efspi/methods/methods_intro.html).
-
-- [Agenda](events/20240607/20240607_EMA_multistakeholder_agenda.pdf).
-- [All slidedecks](events/20240607/20240607_EMA_multistakeholder_slidedecks.zip).
-- [Summary of discussions](events/20240607/20240607_EMA_multistakeholder_summary.pdf).
-
-# 2024/06/17: EMA multistakeholder workshop on Bayesian statistics
-
-- [Agenda](https://www.ema.europa.eu/en/events/workshop-use-bayesian-statistics-clinical-development).
-
-# 2024/05/06: EFSPI StatsLeaders Meeting at BMS in Boudry
-
-- Mouna and Kaspar introduced the group.
-
-# Feedback 
-
-For feedback and questions send an email to [efspieurope@gmail.com](efspieurope@gmail.com).
-
-
-
+```{r conferences, echo = FALSE, message = FALSE, warning = FALSE, results = "asis"}
+cat(a)
+```

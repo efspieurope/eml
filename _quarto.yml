@@ -4,12 +4,17 @@ project:
   render:
     - index.qmd    
     - events.qmd
+    - events_past.qmd
+    - events/20240607
+    - events/20241113
+    - events/20260415
     - methods_intro.qmd
     - methods_members.qmd
     - priority.qmd
     - publications.qmd
     - newsletter
     - newsletter/
+    - links.qmd
 
 website:
   title: "EFSPI Statistical Methodology Leaders"
@@ -32,6 +37,8 @@ website:
           href: newsletter/20260214_achievements2025.html
         - text: "12th June 2026"  
           href: newsletter/20260612_news.html
+    - text: "Links"  
+      href: links.html
 
 format:
   html:

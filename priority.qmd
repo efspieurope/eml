@@ -1,8 +1,6 @@
 ---
 title: "Priority topics"
 date: last-modified
-execute:   
-  freeze: auto  # re-render only when source changes
 format:
   html:
     toc: true
@@ -25,6 +23,9 @@ knitr::opts_chunk$set(echo = TRUE)
 ## read in data
 path <- getwd()
 prio <- as.data.frame(read_excel(paste(path, "/material/prio.xlsx", sep = ""), col_types = NULL))
+
+source(paste(path, "/functions/inputData.r", sep = ""))
+res <- inputData()
 ```
 
 
@@ -38,7 +39,8 @@ prio <- prio %>% select("Priority topic", "Status", "Lead(s)", "Download charter
 kable(prio, align = "llll", row.names = FALSE)
 ```
 
+# Feedback 
 
-
+`r res["infomail"]`.
 
 

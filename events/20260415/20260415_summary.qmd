@@ -1,0 +1,29 @@
+---
+title: "EFSPI Statistical Methodology Leaders F2F"
+author: "Kaspar Rufibach"
+date: '`r Sys.setlocale("LC_TIME", "C"); format(Sys.Date(), "%d %b %Y")`'
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    toc-title: Contents
+    toc-location: left
+    number-sections: true
+    number-depth: 2
+---
+
+```{r setup, include=FALSE}
+## load packages
+packs.html <- c("knitr", "pander", "reporttools", "dplyr", "readxl")
+for (k in 1:length(packs.html)){library(packs.html[k], character.only = TRUE)}
+
+knitr::opts_chunk$set(echo = TRUE)
+
+path <- paste(getwd(), "/", sep = "")
+```
+
+Topics that were discussed:
+
+- Update from organizations.
+- Change management tactics.
+- Priority topics, see [here](../../priority.html).

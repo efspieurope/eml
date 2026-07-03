@@ -23,6 +23,9 @@ knitr::opts_chunk$set(echo = TRUE)
 ## read in data
 path <- getwd()
 pubs <- as.data.frame(read_excel(paste(path, "/data/publications.xlsx", sep = ""), col_types = NULL))
+
+source(paste(path, "/functions/inputData.r", sep = ""))
+res <- inputData()
 ```
  
 ::: {.panel-tabset .nav-pills}
@@ -46,3 +49,7 @@ cat(a)
 ```
 
 :::
+
+# Feedback 
+
+`r res["infomail"]`.

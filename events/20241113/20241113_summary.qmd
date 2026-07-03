@@ -1,0 +1,27 @@
+---
+title: "Regular meeting of EFSPI / PSI regulatory eSIG with MHRA statisticians"
+author: "Kaspar Rufibach"
+date: '`r Sys.setlocale("LC_TIME", "C"); format(Sys.Date(), "%d %b %Y")`'
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    toc-title: Contents
+    toc-location: left
+    number-sections: true
+    number-depth: 2
+---
+
+```{r setup, include=FALSE}
+## load packages
+packs.html <- c("knitr", "pander", "reporttools", "dplyr", "readxl")
+for (k in 1:length(packs.html)){library(packs.html[k], character.only = TRUE)}
+
+knitr::opts_chunk$set(echo = TRUE)
+
+path <- paste(getwd(), "/", sep = "")
+```
+
+EFSPI methods leaders provided input into the agenda of this meeting, and some also attended. Below the protocol of the discussion.
+
+- [Summary of discussions](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fwww.psiweb.org%2Fdocs%2Fdefault-source%2Fsig---regulatory%2F2024-minutes-of-meeting-with-mhra-biostatisticians-(final).docx%3Fsfvrsn%3Da6bfafdb_0&wdOrigin=BROWSELINK).

@@ -1,0 +1,29 @@
+---
+title: "EMA multistakeholder workshop on general topics "
+author: "Kaspar Rufibach"
+date: '`r Sys.setlocale("LC_TIME", "C"); format(Sys.Date(), "%d %b %Y")`'
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    toc-title: Contents
+    toc-location: left
+    number-sections: true
+    number-depth: 2
+---
+
+```{r setup, include=FALSE}
+## load packages
+packs.html <- c("knitr", "pander", "reporttools", "dplyr", "readxl")
+for (k in 1:length(packs.html)){library(packs.html[k], character.only = TRUE)}
+
+knitr::opts_chunk$set(echo = TRUE)
+
+path <- paste(getwd(), "/", sep = "")
+```
+
+EMA invited industry to propose topics for discussion, of which ten were selected for discussion, see the agenda below. Most short talks were given by members of the [EFSPI statistical methodology leaders group](https://efspieurope.github.io/eml/methods_members.html).
+
+- [Agenda](agenda.pdf).
+- [All slidedecks](20240607_EMA_multistakeholder_slidedecks.zip).
+- [Summary of discussions](20240607_EMA_multistakeholder_summary.pdf).

@@ -19,8 +19,15 @@ knitr::opts_chunk$set(echo = TRUE)
 ## read in data
 path <- getwd()
 members <- as.data.frame(read.csv(paste("data/methods_members.csv", sep = "")))[, -1]
+
+source(paste(path, "/functions/inputData.r", sep = ""))
+res <- inputData()
 ```
 
 ```{r echo = FALSE}
 kable(members, col.names = c("Name", "Role", "Company", "Location", "Country"))
 ```
+
+# Feedback 
+
+`r res["infomail"]`.

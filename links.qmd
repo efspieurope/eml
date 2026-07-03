@@ -1,5 +1,5 @@
 ---
-title: " "
+title: "Links"
 date: last-modified
 format:
   html:
@@ -22,18 +22,13 @@ source(paste(path, "/functions/inputData.r", sep = ""))
 res <- inputData()
 ```
 
-# EFSPI statistical methodology leaders
-
-In September 2023 EFSPI founded a new group _EFSPI statistical methodology leaders_, bringing together methodology leaders to work on topics of common interest.
-
-Find more context in this [linkedin post](https://www.linkedin.com/posts/kasparrufibach_biostatistics-statistics-drugdevelopment-activity-7084613881087578113-teIX/?utm_source=share&utm_medium=member_desktop) and [this slidedeck](material/20230913_EFSPI_methodology_group_linkedin.pdf).
+- [EFSPI](http://www.efspi.org).
+- [EFSPI regulatory statistics workshop](https://efspieurope.github.io/workshop/).
+- [EFSP / PSI eSIGs](https://www.psiweb.org/sigs-special-interest-groups/sigs).
 
 # Feedback 
 
 `r res["infomail"]`.
 
-# EFSPI
-
-[EFSPI](http://www.efspi.org).
 
 
