@@ -2,7 +2,7 @@
   "hash": "d768e76524464aba1aa51c39936d9c52",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"EFSPI Statistical Methodology Leaders F2F\"\nauthor: \"Kaspar Rufibach\"\ndate: '03 Jul 2026'\nformat:\n  html:\n    toc: true\n    toc-depth: 2\n    toc-title: Contents\n    toc-location: left\n    number-sections: true\n    number-depth: 2\n---\n\n\n\nTopics that were discussed:\n\n- Update from organizations.\n- Change management tactics.\n- Priority topics, see [here](../../priority.html).\n",
+    "markdown": "---\ntitle: \"EFSPI Statistical Methodology Leaders F2F\"\nauthor: \"Kaspar Rufibach\"\ndate: '24 Aug 2026'\nformat:\n  html:\n    toc: true\n    toc-depth: 2\n    toc-title: Contents\n    toc-location: left\n    number-sections: true\n    number-depth: 2\n---\n\n\n\nTopics that were discussed:\n\n- Update from organizations.\n- Change management tactics.\n- Priority topics, see [here](../../priority.html).\n",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"
