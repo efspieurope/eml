@@ -15,7 +15,7 @@ format:
 
 ## Yearly face-to-face meeting
 
-In April, the EFSPI statistical methodology leaders met for their yearly face-to-face meeting in Copenhagen. The meeting was co-organized by Novo Nordisk and Lundbeck. Ten members took two days out of their busy schedule to travel to Denmark. These [topics](events.html#efspi-statistical-methodology-leaders-f2f-in-copenhagen) were discussed.
+In April, the EFSPI statistical methodology leaders met for their yearly face-to-face meeting in Copenhagen. The meeting was co-organized by Novo Nordisk and Lundbeck. Ten members took two days out of their busy schedule to travel to Denmark. These [topics](../../events.html#efspi-statistical-methodology-leaders-f2f-in-copenhagen) were discussed.
 
 ## Meeting with EMA statisticians
 
@@ -23,15 +23,15 @@ The EML have met with EMA statisticians on 19th May 2026 and discussed the follo
 
 - Open question to regulators: What gaps do you observe that we could help improve?
 - Covariate adjustment.
-- The minutes of this meeting are available [here](events/20260519/20260519_EML_EMA_stats.pdf).
+- The minutes of this meeting are available [here](../../events/20260519/20260519_EML_EMA_stats.pdf).
 
 ## And more
 
-See [events page](events.html).
+See [events page](../../events.html).
 
 # Evolvement of priority topics
 
-See [priority topics](priority.html). The page provides the charter for each priority topic, and these charters outline mission, key stakeholders, workplan, deliverables, and timelines. We are wrapping up the priority topic _A framework to appraise statistical methods building on ICH M15_ and have added _AI_ as a priority topic.
+See [priority topics](../../priority.html). The page provides the charter for each priority topic, and these charters outline mission, key stakeholders, workplan, deliverables, and timelines. We are wrapping up the priority topic _A framework to appraise statistical methods building on ICH M15_ and have added _AI_ as a priority topic.
 
 # Paper _Statistical Methodology Groups in the Pharmaceutical Industry_
 
