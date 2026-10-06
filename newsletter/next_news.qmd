@@ -13,12 +13,20 @@ format:
 
 # Events 
 
+[link to calendar](https://share.novartis.net/:x:/r/sites/EFSPIStatsMethodologyLeaders/_layouts/15/Doc.aspx?sourcedoc=%7BE0EE6C70-FF81-4957-B756-296AEE0D2C6C%7D&file=collaboration%20agenda.xlsx&action=default&mobileredirect=true)
+
 
 # Evolvement of priority topics
 
+- Close out of estimands. Background: 
+  - The EML continue to consider the broad topic of estimands, and its continued embedding in drug development, very important.
+  - Key is expanded and continued involvement of clinicians. The [EWIG](), situated at [EFPIA]() level, is well positioned to work towards that goal and drive it.
+  - The EML continue to collaborate with the [EWIG]() on an opportunistic basis and offer our expertise on the topic.
 
 # Publications
 
 AI two-pager
 
 M15
+
+Two Bayes papers
